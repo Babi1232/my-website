@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas in prague</title>
+    <style>
+      h1 {
+        color: red;
+        text-align: center;
+        font-size: 35px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        color: seagreen;
+        border: 1px solid violet;
+        padding: 15px;
+        font-size: 30px;
+        border-radius: 4px;
+      }
+      h3 {
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        margin: 0 0 0 10px;
+        color: green;
+        border: 1px solid violet;
+        padding: 15px;
+      }
+      .christmas-market {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+        height: 500px;
+        width: 900px;
+      }
+      p {
+        text-align: center;
+        color: brown;
+        line-height: 1.5;
+        margin: 10px 50px 20px 30px;
+        padding: auto;
+        font-size: large;
+      }
+      ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+      }
+      li {
+        display: block;
+        margin-top: 30px;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+      }
+
+      a {
+        cursor: pointer;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .tradelnik {
+        color: brown;
+        font-weight: lighter;
+        font-size: 25px;
+      }
+      .vino {
+        color: crimson;
+        font-weight: lighter;
+        font-size: 25px;
+      }
+
+      img {
+        width: 722px;
+        height: 350px;
+        border: 1px solid green;
+        max-width: 90%;
+        margin-left: auto;
+      }
+
+      button {
+        background-color: green;
+        padding: 20px 40px;
+        display: block;
+        margin: 20px auto;
+        font-size: 18px;
+        border: 1px solid wheat;
+        border-radius: 35px;
+        box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+        color: white;
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        background: white;
+        color: green;
+        cursor: pointer;
+      }
+      .footer {
+        text-align: center;
+        color: gray;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Magical Prague in December</h1>
+      <h2>Christmas market in praha</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/340/original/prague-christmas-markets.jpg?1640080010"
+        alt="christmas market"
+        class="christmas-market"
+      />
+      <p>
+        Prague's magical Christmas markets with its beautifully designed wooden
+        chalets take place on the major squares - Old Town square, Republic
+        square, Wenceslas square or Peace square. They lay out plenty of
+        exciting foodie items, handmade craft gifts and the most delicious
+        warming drinks such as hot chocolate or spiced mulled wines. You will
+        find great gift ideas as there is a vast selection of Christmas
+        decorations, toys, jewelry, winter clothing and accessories. It is also
+        a great alternative to the usual Christmas shopping experience. If you
+        stroll around the city markets, you are sure to get in the festive
+        spirit.
+      </p>
+
+      <ul>
+        <h3>Main attraction of christmas market😋</h3>
+
+        <li>
+          <a
+            href="https://cs.wikipedia.org/wiki/Trdeln%C3%ADk"
+            target="_blank"
+            class="tradelnik"
+          >
+            Tradelnik</a
+          >
+          <br />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/341/original/tradelnik.jpg?1640081028"
+            alt="tradelnik"
+          />
+        </li>
+
+        <li>
+          <a
+            href="https://en.wikipedia.org/wiki/Mulled_wine"
+            target="_blank"
+            class="vino"
+          >
+            Svarene Vino</a
+          >
+          <br />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/342/original/svarene_wine.jpg?1640081079"
+            alt="svarene vino"
+          />
+        </li>
+      </ul>
+      <button class="order-button">👉Order Now</button>
+      <p class="footer">Coded by Babisha Shrestha</p>
+    </div>
+    <script>
+      function order() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let age = prompt("What is age ?");
+        if (age >= 18) {
+          alert("welcome " + name + " enjoy your  svarne vino and tradelnik.");
+        } else {
+          alert(
+            "Sorry " +
+              name +
+              " you cannot buy svarene vino but enjoy your tradelnik."
+          );
+        }
+      }
+      let orderButton = document.querySelector(".order-button");
+      orderButton.addEventListener("click", order);
+    </script>
+  </body>
+</html>
